@@ -17,6 +17,8 @@ html
           .information
             form(method="POST", action="/invite")#join-form.form
               input(type="email", name="email", autofocus, placeholder="#{__('ENTER_EMAIL')}")#slack-email.field
+              h2 or click the funny link below
+              a(href="https://join.slack.com/t/aspiringandelans/shared_invite/enQtMjc3NjQ4MjcwNzU0LWE1ZWFhZWQzOWI1Y2IxMzhiNzg0NjkxMzNlY2EyOWU1ZDM4YTQ4NzNhYTc0ZDkwYzE1ODdkOTI4ZGY5ZDM4YTA") Click Me, I am the alternative invite link
               if tokenRequired
                 input(type="text", name="token", placeholder="#{__('ENTER_TOKEN')}")#slack-token.field
               input(type="submit", value="Join").submit
